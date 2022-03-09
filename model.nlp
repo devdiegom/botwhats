@@ -1,0 +1,1183 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "pt"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "locale": "pt",
+          "trainByDomain": false,
+          "tag": "domain-manager-pt",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "bom,dia": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "boa,tard": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "boa,noit": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "ae,bem,e,tud": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "ola": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "oi": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "ooi": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "bem,tud": {
+            "intent": "SAUDACAO",
+            "domain": "default"
+          },
+          "de,faz,gost,ped,um": {
+            "intent": "PEDIDO",
+            "domain": "default"
+          },
+          "com,fac,par,ped": {
+            "intent": "PEDIDO",
+            "domain": "default"
+          },
+          "faz,ped,quer,um": {
+            "intent": "PEDIDO",
+            "domain": "default"
+          },
+          "aqu,ped,por,poss": {
+            "intent": "PEDIDO",
+            "domain": "default"
+          },
+          "hamburgu,ped,quer,um": {
+            "intent": "PEDIDO",
+            "domain": "default"
+          },
+          "de,funcion,horari,o,qual": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "abert,esta": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "abre,hor,que": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "aind,esta,funcion": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "ate,hor,ped,poss,que": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "fech,hor,que,vcs": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "cardapi,o,qual": {
+            "intent": "CARDAPIO",
+            "domain": "default"
+          },
+          "cardapi,de,envi,me,o,pod,vcs": {
+            "intent": "CARDAPIO",
+            "domain": "default"
+          },
+          "cardapi,o,tem": {
+            "intent": "CARDAPIO",
+            "domain": "default"
+          },
+          "o,que,vcs,vend": {
+            "intent": "CARDAPIO",
+            "domain": "default"
+          },
+          "do,hamburgu,o,qual,valor": {
+            "intent": "CARDAPIO",
+            "domain": "default"
+          },
+          "do,o,qual,valor,xis": {
+            "intent": "CARDAPIO",
+            "domain": "default"
+          },
+          "enderec,o,qual": {
+            "intent": "LOCALIZACAO",
+            "domain": "default"
+          },
+          "a,localizaca,qual": {
+            "intent": "LOCALIZACAO",
+            "domain": "default"
+          },
+          "fic,onde": {
+            "intent": "LOCALIZACAO",
+            "domain": "default"
+          },
+          "de,pont,referenc": {
+            "intent": "LOCALIZACAO",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "SAUDACAO": "default",
+          "PEDIDO": "default",
+          "HORARIO": "default",
+          "CARDAPIO": "default",
+          "LOCALIZACAO": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "bom dia",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "boa tarde",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "boa noite",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "e ae tudo bem",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "ola",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "oi",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "ooi",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "tudo bem",
+            "intent": "SAUDACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "gostaria de fazer um pedido",
+            "intent": "PEDIDO"
+          },
+          {
+            "domain": "default",
+            "utterance": "como faco para pedir",
+            "intent": "PEDIDO"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero fazer um pedido",
+            "intent": "PEDIDO"
+          },
+          {
+            "domain": "default",
+            "utterance": "posso pedir por aqui",
+            "intent": "PEDIDO"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero pedir um hamburguer",
+            "intent": "PEDIDO"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o horario de funcionamento",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "estao aberto",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "abre que horas ",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "ainda estao funcionando",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "posso pedir ate que horas",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "que horas vcs fecham",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o cardapio",
+            "intent": "CARDAPIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "pode me enviar o cardapio de vcs",
+            "intent": "CARDAPIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "tem o cardapio",
+            "intent": "CARDAPIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "o que vcs vendem",
+            "intent": "CARDAPIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o valor do hamburguer",
+            "intent": "CARDAPIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o valor do Xis",
+            "intent": "CARDAPIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o endereco",
+            "intent": "LOCALIZACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual a localizacao",
+            "intent": "LOCALIZACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "onde fica",
+            "intent": "LOCALIZACAO"
+          },
+          {
+            "domain": "default",
+            "utterance": "ponto de referencia",
+            "intent": "LOCALIZACAO"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "pt",
+              "tag": "nlu-pt",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "bom": 1,
+              "dia": 1,
+              "boa": 1,
+              "tard": 1,
+              "noit": 1,
+              "e": 1,
+              "ae": 1,
+              "tud": 1,
+              "bem": 1,
+              "ola": 1,
+              "oi": 1,
+              "ooi": 1,
+              "gost": 1,
+              "de": 1,
+              "faz": 1,
+              "um": 1,
+              "ped": 1,
+              "com": 1,
+              "fac": 1,
+              "par": 1,
+              "quer": 1,
+              "poss": 1,
+              "por": 1,
+              "aqu": 1,
+              "hamburgu": 1,
+              "qual": 1,
+              "o": 1,
+              "horari": 1,
+              "funcion": 1,
+              "esta": 1,
+              "abert": 1,
+              "abre": 1,
+              "que": 1,
+              "hor": 1,
+              "aind": 1,
+              "ate": 1,
+              "vcs": 1,
+              "fech": 1,
+              "cardapi": 1,
+              "pod": 1,
+              "me": 1,
+              "envi": 1,
+              "tem": 1,
+              "vend": 1,
+              "valor": 1,
+              "do": 1,
+              "xis": 1,
+              "enderec": 1,
+              "a": 1,
+              "localizaca": 1,
+              "onde": 1,
+              "fic": 1,
+              "pont": 1,
+              "referenc": 1
+            },
+            "intents": {
+              "SAUDACAO": 1,
+              "PEDIDO": 1,
+              "HORARIO": 1,
+              "CARDAPIO": 1,
+              "LOCALIZACAO": 1
+            },
+            "intentFeatures": {
+              "SAUDACAO": {
+                "bom": 1,
+                "dia": 1,
+                "boa": 1,
+                "tard": 1,
+                "noit": 1,
+                "e": 1,
+                "ae": 1,
+                "tud": 1,
+                "bem": 1,
+                "ola": 1,
+                "oi": 1,
+                "ooi": 1
+              },
+              "PEDIDO": {
+                "gost": 1,
+                "de": 1,
+                "faz": 1,
+                "um": 1,
+                "ped": 1,
+                "com": 1,
+                "fac": 1,
+                "par": 1,
+                "quer": 1,
+                "poss": 1,
+                "por": 1,
+                "aqu": 1,
+                "hamburgu": 1
+              },
+              "HORARIO": {
+                "qual": 1,
+                "o": 1,
+                "horari": 1,
+                "de": 1,
+                "funcion": 1,
+                "esta": 1,
+                "abert": 1,
+                "abre": 1,
+                "que": 1,
+                "hor": 1,
+                "aind": 1,
+                "poss": 1,
+                "ped": 1,
+                "ate": 1,
+                "vcs": 1,
+                "fech": 1
+              },
+              "CARDAPIO": {
+                "qual": 1,
+                "o": 1,
+                "cardapi": 1,
+                "pod": 1,
+                "me": 1,
+                "envi": 1,
+                "de": 1,
+                "vcs": 1,
+                "tem": 1,
+                "que": 1,
+                "vend": 1,
+                "valor": 1,
+                "do": 1,
+                "hamburgu": 1,
+                "xis": 1
+              },
+              "LOCALIZACAO": {
+                "qual": 1,
+                "o": 1,
+                "enderec": 1,
+                "a": 1,
+                "localizaca": 1,
+                "onde": 1,
+                "fic": 1,
+                "pont": 1,
+                "de": 1,
+                "referenc": 1
+              }
+            },
+            "featuresToIntent": {
+              "bom": [
+                "SAUDACAO"
+              ],
+              "dia": [
+                "SAUDACAO"
+              ],
+              "boa": [
+                "SAUDACAO"
+              ],
+              "tard": [
+                "SAUDACAO"
+              ],
+              "noit": [
+                "SAUDACAO"
+              ],
+              "e": [
+                "SAUDACAO"
+              ],
+              "ae": [
+                "SAUDACAO"
+              ],
+              "tud": [
+                "SAUDACAO"
+              ],
+              "bem": [
+                "SAUDACAO"
+              ],
+              "ola": [
+                "SAUDACAO"
+              ],
+              "oi": [
+                "SAUDACAO"
+              ],
+              "ooi": [
+                "SAUDACAO"
+              ],
+              "gost": [
+                "PEDIDO"
+              ],
+              "de": [
+                "PEDIDO",
+                "HORARIO",
+                "CARDAPIO",
+                "LOCALIZACAO"
+              ],
+              "faz": [
+                "PEDIDO"
+              ],
+              "um": [
+                "PEDIDO"
+              ],
+              "ped": [
+                "PEDIDO",
+                "HORARIO"
+              ],
+              "com": [
+                "PEDIDO"
+              ],
+              "fac": [
+                "PEDIDO"
+              ],
+              "par": [
+                "PEDIDO"
+              ],
+              "quer": [
+                "PEDIDO"
+              ],
+              "poss": [
+                "PEDIDO",
+                "HORARIO"
+              ],
+              "por": [
+                "PEDIDO"
+              ],
+              "aqu": [
+                "PEDIDO"
+              ],
+              "hamburgu": [
+                "PEDIDO",
+                "CARDAPIO"
+              ],
+              "qual": [
+                "HORARIO",
+                "CARDAPIO",
+                "LOCALIZACAO"
+              ],
+              "o": [
+                "HORARIO",
+                "CARDAPIO",
+                "LOCALIZACAO"
+              ],
+              "horari": [
+                "HORARIO"
+              ],
+              "funcion": [
+                "HORARIO"
+              ],
+              "esta": [
+                "HORARIO"
+              ],
+              "abert": [
+                "HORARIO"
+              ],
+              "abre": [
+                "HORARIO"
+              ],
+              "que": [
+                "HORARIO",
+                "CARDAPIO"
+              ],
+              "hor": [
+                "HORARIO"
+              ],
+              "aind": [
+                "HORARIO"
+              ],
+              "ate": [
+                "HORARIO"
+              ],
+              "vcs": [
+                "HORARIO",
+                "CARDAPIO"
+              ],
+              "fech": [
+                "HORARIO"
+              ],
+              "cardapi": [
+                "CARDAPIO"
+              ],
+              "pod": [
+                "CARDAPIO"
+              ],
+              "me": [
+                "CARDAPIO"
+              ],
+              "envi": [
+                "CARDAPIO"
+              ],
+              "tem": [
+                "CARDAPIO"
+              ],
+              "vend": [
+                "CARDAPIO"
+              ],
+              "valor": [
+                "CARDAPIO"
+              ],
+              "do": [
+                "CARDAPIO"
+              ],
+              "xis": [
+                "CARDAPIO"
+              ],
+              "enderec": [
+                "LOCALIZACAO"
+              ],
+              "a": [
+                "LOCALIZACAO"
+              ],
+              "localizaca": [
+                "LOCALIZACAO"
+              ],
+              "onde": [
+                "LOCALIZACAO"
+              ],
+              "fic": [
+                "LOCALIZACAO"
+              ],
+              "pont": [
+                "LOCALIZACAO"
+              ],
+              "referenc": [
+                "LOCALIZACAO"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "pt",
+                "tag": "nlu-pt",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "bom",
+                "dia",
+                "boa",
+                "tard",
+                "noit",
+                "e",
+                "ae",
+                "tud",
+                "bem",
+                "ola",
+                "oi",
+                "ooi",
+                "gost",
+                "de",
+                "faz",
+                "um",
+                "ped",
+                "com",
+                "fac",
+                "par",
+                "quer",
+                "poss",
+                "por",
+                "aqu",
+                "hamburgu",
+                "qual",
+                "o",
+                "horari",
+                "funcion",
+                "esta",
+                "abert",
+                "abre",
+                "que",
+                "hor",
+                "aind",
+                "ate",
+                "vcs",
+                "fech",
+                "cardapi",
+                "pod",
+                "me",
+                "envi",
+                "tem",
+                "vend",
+                "valor",
+                "do",
+                "xis",
+                "enderec",
+                "a",
+                "localizaca",
+                "onde",
+                "fic",
+                "pont",
+                "referenc"
+              ],
+              "intents": [
+                "SAUDACAO",
+                "PEDIDO",
+                "HORARIO",
+                "CARDAPIO",
+                "LOCALIZACAO"
+              ],
+              "perceptrons": [
+                [
+                  3.743055820465088,
+                  3.743055820465088,
+                  4.974072456359863,
+                  2.492643356323242,
+                  2.4854421615600586,
+                  0.19632668793201447,
+                  0.19632668793201447,
+                  3.6002118587493896,
+                  3.6002118587493896,
+                  7.358433246612549,
+                  7.318822383880615,
+                  7.2774882316589355,
+                  -0.4091251492500305,
+                  -2.9901888370513916,
+                  -0.90447998046875,
+                  -1.480251669883728,
+                  -3.685021162033081,
+                  -1.0600907802581787,
+                  -1.0600907802581787,
+                  -1.0600907802581787,
+                  -0.9821467399597168,
+                  -1.1432071924209595,
+                  -1.017810344696045,
+                  -1.017810344696045,
+                  -0.7150143384933472,
+                  -3.341130495071411,
+                  -3.393946886062622,
+                  -0.3192809224128723,
+                  -1.6397418975830078,
+                  -4.0488715171813965,
+                  -2.7801146507263184,
+                  -1.6757320165634155,
+                  -2.6927924156188965,
+                  -2.482024669647217,
+                  -1.253578782081604,
+                  -0.0888439193367958,
+                  -1.0644694566726685,
+                  -0.6717345118522644,
+                  -2.0396320819854736,
+                  -0.12258265167474747,
+                  -0.12258265167474747,
+                  -0.12258265167474747,
+                  -1.4156221151351929,
+                  -0.1824895739555359,
+                  -0.3586454391479492,
+                  -0.3586454391479492,
+                  -0.1706474870443344,
+                  -0.36093589663505554,
+                  -1.7533506155014038,
+                  -1.7533506155014038,
+                  -3.4082493782043457,
+                  -3.4082493782043457,
+                  -1.9262919425964355,
+                  -1.9262919425964355,
+                  6.859432794943321
+                ],
+                [
+                  -0.33392134308815,
+                  -0.33392134308815,
+                  -0.49369576573371887,
+                  -0.23914125561714172,
+                  -0.2256569266319275,
+                  -0.14156553149223328,
+                  -0.14156553149223328,
+                  -0.33286115527153015,
+                  -0.33286115527153015,
+                  -0.5202374458312988,
+                  -0.5164948105812073,
+                  -0.5135375261306763,
+                  1.3902398347854614,
+                  0.5120266079902649,
+                  1.7417553663253784,
+                  3.464804172515869,
+                  6.610936164855957,
+                  2.3861169815063477,
+                  2.3861169815063477,
+                  2.3861169815063477,
+                  2.069852828979492,
+                  0.7608956694602966,
+                  3.2035694122314453,
+                  3.2035694122314453,
+                  1.5544133186340332,
+                  -0.7566637992858887,
+                  -0.8840738534927368,
+                  -0.16359354555606842,
+                  -0.4434395730495453,
+                  -0.6195160746574402,
+                  -0.33883777260780334,
+                  -0.14716342091560364,
+                  -2.744957208633423,
+                  -2.715205669403076,
+                  -0.20883847773075104,
+                  -2.4303951263427734,
+                  -0.1914876401424408,
+                  -0.03457235172390938,
+                  -0.33625397086143494,
+                  -0.09263931214809418,
+                  -0.09263931214809418,
+                  -0.09263931214809418,
+                  -0.07857363671064377,
+                  -0.014867434278130531,
+                  -0.20626959204673767,
+                  -0.20626959204673767,
+                  -0.01657465659081936,
+                  -0.02319617196917534,
+                  -0.12125451862812042,
+                  -0.12125451862812042,
+                  -0.34581440687179565,
+                  -0.34581440687179565,
+                  -0.5031644105911255,
+                  -0.5031644105911255,
+                  0.5106754045083228
+                ],
+                [
+                  -0.6333222389221191,
+                  -0.6333222389221191,
+                  -0.9416245818138123,
+                  -0.46902912855148315,
+                  -0.4218912720680237,
+                  -0.28122013807296753,
+                  -0.28122013807296753,
+                  -0.6263319253921509,
+                  -0.6263319253921509,
+                  -0.9476470947265625,
+                  -0.9434802532196045,
+                  -0.9391292929649353,
+                  -0.6757045984268188,
+                  2.338045835494995,
+                  -0.9343032836914062,
+                  -1.104299783706665,
+                  -0.5562946796417236,
+                  -0.4128049612045288,
+                  -0.4128049612045288,
+                  -0.4128049612045288,
+                  -0.394874632358551,
+                  1.0020778179168701,
+                  -0.8384814262390137,
+                  -0.8384814262390137,
+                  -0.4298666715621948,
+                  1.402826189994812,
+                  -1.1390042304992676,
+                  4.949293613433838,
+                  5.707219123840332,
+                  6.974656581878662,
+                  6.211787223815918,
+                  2.3406577110290527,
+                  3.935779571533203,
+                  7.08189058303833,
+                  0.7564887404441833,
+                  1.8708229064941406,
+                  -0.5844632983207703,
+                  2.87064528465271,
+                  -1.2178927659988403,
+                  -0.25558656454086304,
+                  -0.25558656454086304,
+                  -0.25558656454086304,
+                  -0.2253112643957138,
+                  -3.1457290649414062,
+                  -0.5500591993331909,
+                  -0.5500591993331909,
+                  -0.2564055025577545,
+                  -1.1613564491271973,
+                  -1.172357201576233,
+                  -1.172357201576233,
+                  -0.6743967533111572,
+                  -0.6743967533111572,
+                  -1.6280419826507568,
+                  -1.6280419826507568,
+                  0.9458127923254268
+                ],
+                [
+                  -0.24464644491672516,
+                  -0.24464644491672516,
+                  -0.41634035110473633,
+                  -0.19047115743160248,
+                  -0.17071567475795746,
+                  -0.12478271126747131,
+                  -0.12478271126747131,
+                  -0.30160945653915405,
+                  -0.30160945653915405,
+                  -0.2778421640396118,
+                  -0.26838523149490356,
+                  -0.25923943519592285,
+                  -0.14565150439739227,
+                  -2.400906562805176,
+                  -0.215640589594841,
+                  -0.5568487644195557,
+                  -0.8379051685333252,
+                  -0.07780943065881729,
+                  -0.07780943065881729,
+                  -0.07780943065881729,
+                  -0.3509218096733093,
+                  -0.14443878829479218,
+                  -0.05978013202548027,
+                  -0.05978013202548027,
+                  1.4720518589019775,
+                  0.2438269853591919,
+                  6.145854949951172,
+                  -2.045785427093506,
+                  -2.0759992599487305,
+                  -0.13770751655101776,
+                  -0.10933003574609756,
+                  -0.21167245507240295,
+                  1.7348675727844238,
+                  -2.194870710372925,
+                  -0.014117300510406494,
+                  -0.0595376156270504,
+                  2.3763222694396973,
+                  -1.861285924911499,
+                  7.231173515319824,
+                  0.3108413815498352,
+                  0.3108413815498352,
+                  0.3108413815498352,
+                  1.1919989585876465,
+                  3.928773880004883,
+                  3.2169106006622314,
+                  3.2169106006622314,
+                  1.450209379196167,
+                  -6.060657978057861,
+                  -0.38833606243133545,
+                  -0.38833606243133545,
+                  -0.2647028863430023,
+                  -0.2647028863430023,
+                  -0.2880626320838928,
+                  -0.2880626320838928,
+                  -0.02077010981159859
+                ],
+                [
+                  -1.0227116346359253,
+                  -1.0227116346359253,
+                  -1.4320963621139526,
+                  -0.729568600654602,
+                  -0.6778329610824585,
+                  -0.39036086201667786,
+                  -0.39036086201667786,
+                  -0.9685841798782349,
+                  -0.9685841798782349,
+                  -1.7696197032928467,
+                  -1.7587850093841553,
+                  -1.747522234916687,
+                  -0.6159871220588684,
+                  1.4641574621200562,
+                  -0.7196625471115112,
+                  -0.7921714782714844,
+                  -1.344680905342102,
+                  -0.2447068840265274,
+                  -0.2447068840265274,
+                  -0.2447068840265274,
+                  -0.1441192477941513,
+                  -0.259909451007843,
+                  -0.23088878393173218,
+                  -0.23088878393173218,
+                  -1.0731202363967896,
+                  3.9219326972961426,
+                  -0.7525168657302856,
+                  -3.1313085556030273,
+                  -3.273162364959717,
+                  -0.9925935864448547,
+                  -0.8507378101348877,
+                  -0.4792340099811554,
+                  -0.7263240218162537,
+                  -0.6853312253952026,
+                  -0.10858090966939926,
+                  -0.014482052996754646,
+                  -0.4900791049003601,
+                  -0.16766437888145447,
+                  -4.671580791473389,
+                  -0.20946156978607178,
+                  -0.20946156978607178,
+                  -0.20946156978607178,
+                  -0.03370249271392822,
+                  -0.031060433015227318,
+                  -1.9726125001907349,
+                  -1.9726125001907349,
+                  -0.9689110517501831,
+                  9.075409889221191,
+                  4.2914228439331055,
+                  4.2914228439331055,
+                  6.242048263549805,
+                  6.242048263549805,
+                  5.512405872344971,
+                  5.512405872344971,
+                  1.7832581618660148
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "pt",
+        "bom dia"
+      ],
+      [
+        "pt",
+        "boa tarde"
+      ],
+      [
+        "pt",
+        "boa noite"
+      ],
+      [
+        "pt",
+        "e ae tudo bem"
+      ],
+      [
+        "pt",
+        "ola"
+      ],
+      [
+        "pt",
+        "oi"
+      ],
+      [
+        "pt",
+        "ooi"
+      ],
+      [
+        "pt",
+        "tudo bem"
+      ],
+      [
+        "pt",
+        "gostaria de fazer um pedido"
+      ],
+      [
+        "pt",
+        "como faco para pedir"
+      ],
+      [
+        "pt",
+        "quero fazer um pedido"
+      ],
+      [
+        "pt",
+        "posso pedir por aqui"
+      ],
+      [
+        "pt",
+        "quero pedir um hamburguer"
+      ],
+      [
+        "pt",
+        "qual o horario de funcionamento"
+      ],
+      [
+        "pt",
+        "estao aberto"
+      ],
+      [
+        "pt",
+        "abre que horas "
+      ],
+      [
+        "pt",
+        "ainda estao funcionando"
+      ],
+      [
+        "pt",
+        "posso pedir ate que horas"
+      ],
+      [
+        "pt",
+        "que horas vcs fecham"
+      ],
+      [
+        "pt",
+        "qual o cardapio"
+      ],
+      [
+        "pt",
+        "pode me enviar o cardapio de vcs"
+      ],
+      [
+        "pt",
+        "tem o cardapio"
+      ],
+      [
+        "pt",
+        "o que vcs vendem"
+      ],
+      [
+        "pt",
+        "qual o valor do hamburguer"
+      ],
+      [
+        "pt",
+        "qual o valor do Xis"
+      ],
+      [
+        "pt",
+        "qual o endereco"
+      ],
+      [
+        "pt",
+        "qual a localizacao"
+      ],
+      [
+        "pt",
+        "onde fica"
+      ],
+      [
+        "pt",
+        "ponto de referencia"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "pt": {
+        "SAUDACAO": [
+          {
+            "answer": "Olá sou o Atendente virtual, vou te atender hoje!"
+          },
+          {
+            "answer": "Olá sou o Diletinhos, estou aqui pra te ajudar!"
+          }
+        ],
+        "LOCALIZACAO": [
+          {
+            "answer": "Nosso endereço é rua Itararé 333, Bela vista!"
+          }
+        ],
+        "HORARIO": [
+          {
+            "answer": "Nosso Horário de Funcionamento é: Terça a Quinta das 14H as 02H, Sexta e Sábado das 11:30H as 03H da Manha!"
+          }
+        ],
+        "PEDIDO": [
+          {
+            "answer": "Você pode pedir direto pelo nosso site! https://diletosburguer.pedzap.com.br"
+          },
+          {
+            "answer": "Peça diretamente pelo site! https://diletosburguer.pedzap.com.br"
+          }
+        ],
+        "CARDAPIO": [
+          {
+            "answer": "Só clicar no link e acessar o nosso cardápio. https://diletosburguer.pedzap.com.br"
+          },
+          {
+            "answer": "Já estou enviando o nosso cardápio, acesse agora https://diletosburguer.pedzap.com.br"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
